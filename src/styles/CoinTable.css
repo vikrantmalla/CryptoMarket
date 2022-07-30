@@ -1,0 +1,72 @@
+.wrappers {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 2rem;
+  box-shadow: rgb(41 44 46 / 30%) 0px 1px 2px 0px,
+    rgb(27 29 31 / 15%) 0px 2px 6px 2px;
+}
+th {
+  background-color: #3f51b5;
+  color: #fff;
+}
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+th,
+td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.coins th:nth-child(n + 2) {
+  text-align: end;
+}
+.coins td:nth-child(n + 2) {
+  text-align: end;
+}
+
+tbody tr:hover {
+  background-color: #e6f7ee;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  margin: 1.5rem 0 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: rgb(41 44 46 / 30%) 0px 1px 2px 0px,
+    rgb(27 29 31 / 15%) 0px 2px 6px 2px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.pagination-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination-buttons button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.pagination-buttons p {
+  margin-bottom: 0;
+}

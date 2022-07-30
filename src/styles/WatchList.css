@@ -1,0 +1,38 @@
+.title {
+  text-align: left;
+}
+
+.message {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message h1 {
+  font-weight: 300;
+}
+.watchlistTable {
+  margin: 1.5rem 0;
+}
+.watchlistTable th:nth-child(1) {
+  text-align: center;
+}
+
+.watchlistTable td:nth-child(1) {
+  text-align: center;
+}
+
+th:nth-child(n + 3) {
+  text-align: end;
+}
+
+td:nth-child(n + 3) {
+  text-align: end;
+}
+
+.iconBtnn {
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}

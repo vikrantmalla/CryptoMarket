@@ -1,0 +1,75 @@
+.coin-cointainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.coin-cointainer h1 {
+  text-transform: capitalize;
+}
+
+.coin-cointainer h1 span {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+.coin-cointainer .iconBtn {
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  border: none;
+}
+.coin-infos {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 0;
+}
+
+.coinStats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid gray;
+}
+.coinStats:hover {
+  background-color: #e6f7ee;
+}
+.coinStats h3 {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 62em) {
+  .coin-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .coinStats {
+    width: 450px;
+  }
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2.5rem 0;
+}
+
+.button-container button {
+  border: 1px solid #126bff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: none;
+}
+
+@media (min-width: 62em) {
+  .button-container button {
+    width: 200px;
+  }
+}

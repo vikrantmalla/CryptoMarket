@@ -1,0 +1,45 @@
+.wrappers {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 2rem;
+  box-shadow: rgb(41 44 46 / 30%) 0px 1px 2px 0px,
+    rgb(27 29 31 / 15%) 0px 2px 6px 2px;
+}
+th {
+  background-color: #3f51b5;
+  color: #fff;
+}
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+th,
+td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.backBtn-cointaner {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+}
+.back-btn {
+  padding: 0.5rem 1rem;
+}
+
+.iconBtn {
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  border: none;
+}
