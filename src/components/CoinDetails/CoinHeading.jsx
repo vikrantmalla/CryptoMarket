@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { GlobalContext } from "../../context/GlobalState";
 import { AiFillStar } from "react-icons/ai";
 import { AiOutlineStar } from "react-icons/ai";
 
 const CoinHeading = ({ cryptoDetails, id }) => {
-    console.log(cryptoDetails)
+
+    const { addCoinToWatchList, removeCoinToWatchList, watchList } = useContext(GlobalContext);
+
+    // Check whether click on remove or add button
+    let status = watchList.find((m) => {
+        return (
+            m?.data?.id == cryptoDetails?.data?.id
+        )
+    })
+
     let changePercent = parseFloat(cryptoDetails?.data?.changePercent24Hr).toFixed(2);
     let profit = changePercent >= 0;
+
     return (
         <div className='coin-cointainer'>
             <div className='coin-info'>
