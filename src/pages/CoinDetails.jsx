@@ -5,9 +5,9 @@ import CoinChart from '../components/CoinDetails/CoinChart';
 import CoinStats from '../components/CoinDetails/CoinStats';
 import { GlobalContext } from "../context/GlobalState";
 import BackButton from '../components/BackButton';
-import { AiFillStar } from "react-icons/ai";
-import { AiOutlineStar } from "react-icons/ai";
+import CoinHeading from '../components/CoinDetails/CoinHeading';
 import "../styles/CoinChart.css";
+
 
 const CoinDetails = () => {
 
@@ -34,12 +34,7 @@ const CoinDetails = () => {
 
         <main>
             <BackButton />
-            <div className='coin-cointainer'>
-                <h1>{id}<span>({cryptoDetails?.data?.symbol})</span></h1>
-                <button className='iconBtn' onClick={() => status ? removeCoinToWatchList(cryptoDetails?.data?.id) : addCoinToWatchList(cryptoDetails)}>
-                    {status ? < AiFillStar /> : < AiOutlineStar />}
-                </button>
-            </div>
+            <CoinHeading cryptoDetails={cryptoDetails} id={id} />
             <CoinStats cryptoDetails={cryptoDetails} />
             <CoinChart id={id} />
         </main>
