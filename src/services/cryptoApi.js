@@ -35,3 +35,16 @@ export const getSingleCoinHistoricalChart = async (id, days = "M1") => {
     console.log(error);
   }
 };
+
+// Exchange
+export const getExchangesData = async () => {
+  try {
+    const {
+      data: { data },
+    } = await axios.get(`https://api.coincap.io/v2/exchanges`);
+
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};

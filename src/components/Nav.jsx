@@ -30,6 +30,9 @@ export default function Navbar() {
                     <li>
                         <NavLink to="/watchlist">WatchList</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="/exchange">Exchange</NavLink>
+                    </li>
                 </ul>
             </div>
         </nav>

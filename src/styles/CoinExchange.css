@@ -1,0 +1,10 @@
+.exchangeTable {
+  margin-top: 1.5rem;
+}
+
+.exchangeTable th:nth-child(n + 2) {
+  text-align: end;
+}
+.exchangeTable td:nth-child(n + 2) {
+  text-align: end;
+}
